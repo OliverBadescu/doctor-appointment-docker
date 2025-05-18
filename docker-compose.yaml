@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.9"               
 
 services:
   mysql:
@@ -35,7 +35,7 @@ services:
     restart: always
 
   client:
-    image: mycodeschool/doctor-appointment-frontend-react:${CLIENT_TAG}
+    image: oliver005/doctor-appointment-frontend-react:${CLIENT_TAG}
     container_name: client-container
     ports:
       - "3000:80"
@@ -49,4 +49,4 @@ volumes:
   volume_data_test:
 
 networks:
-  myappnetwork:
+  myappnetwork : 
